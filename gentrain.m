@@ -17,7 +17,7 @@ xver=1;
 % Change something
 th0(1)=1.5e6;
 th0(2)=1.5;
-th0(3)=10000;
+th0(3)=30000;
 
 dth=1e5;
 for index=indices
@@ -29,7 +29,7 @@ for index=indices
     oldFolder = cd('trainingdataimages');
     if xver==1
         % Make a quick plot
-        imagesc(v2s(Hx,params))
+        imagesc(v2s(Hx,params)); axis equal;
         title(sprintf('%g %g %g\n%g %g %g %g',...
             th0(1),th0(2),th0(3),...
             params.dydx(1),params.dydx(2),...
