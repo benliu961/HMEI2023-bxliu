@@ -33,10 +33,10 @@ for index=indices
         title(sprintf('%g %g %g\n%g %g %g %g',...
             th0(1),th0(2),th0(3),...
             params.dydx(1),params.dydx(2),...
-            params.NyNx(1),params.NyNx(2)))
-        set(gca, 'visible', 'off')
-        set(gca, 'xtick', [])
-        print('-dpng',fname)
+	    params.NyNx(1),params.NyNx(2)));
+        set(gca, 'visible', 'off');
+        set(gca, 'xtick', []);
+        print('-dpng', fname);
     end
     cd(oldFolder)
     cd('trainingdatavalues')
