@@ -22,6 +22,7 @@ th0(3)=30000;
 dth=1e5;
 for index=indices
     th0(1)=th0(1)+dth;
+    th0(2)=rand(n)*3;
     [Hx,th0,params]=simulosl(th0,params);
     
     % Generic name
