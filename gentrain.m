@@ -19,10 +19,11 @@ th0(1)=1.5e6;
 th0(2)=1.5;
 th0(3)=30000;
 
-dth=1e5;
+% dth=1e5;
 for index=indices
-    th0(1)=th0(1)+dth;
-    th0(2)=rand(n)*3;
+    th0(1)=rand()*3e6 + 1e6;
+    th0(2)=rand()*3;
+    th0(3)=round(exp(rand()*3+8));
     [Hx,th0,params]=simulosl(th0,params);
     
     % Generic name
