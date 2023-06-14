@@ -26,7 +26,7 @@ for index=indices
     th0(3)=round(exp(rand()*3+8));
     a = round(rand()*100+32);
     b = round(rand()*100+32);
-    params.NyNx=[32 32];
+    params.NyNx=[a b];
     try
         [Hx,th0,params]=simulosl(th0,params);
         % Generic name
