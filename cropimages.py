@@ -14,8 +14,8 @@ def find_white_corners(im):
     top = x[0][0]
     right = x[-1][1]
     bottom = x[-1][0]
-    return left, top, right, bottom 
-    # return left + 1, top + 1, right + 1, bottom + 1
+    # return left, top, right, bottom 
+    return left + 1, top + 1, right, bottom + 1
 
 # im = Image.open('trainingdataimages/gentrain_001.png')
 # left, top, right, bottom = find_white_corners(im)
