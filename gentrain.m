@@ -15,7 +15,7 @@ function gentrain(indices)
 xver=1;
 
 % Change something
-th0(1)=1.5e6;
+% th0(1)=1.5e6;
 th0(2)=1.5;
 % th0(3)=30000;
 
