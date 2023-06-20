@@ -31,10 +31,10 @@ for index=indices
         [Hx,th0,params]=simulosl(th0,params);
         % Generic name
         fname=sprintf('gentrain_%.3i',index);
-        oldFolder = cd('trainingdataimages');
+        oldFolder = cd('image_color');
         if xver==1
             % Make a quick plot
-	  imagesc(v2s(Hx,params)); axis equal; colormap gray;
+	  imagesc(v2s(Hx,params)); axis equal; colormap default;
             title(sprintf('%g %g %g\n%g %g %g %g',...
                 th0(1),th0(2),th0(3),...
                 params.dydx(1),params.dydx(2),...
@@ -44,7 +44,7 @@ for index=indices
             print('-dpng', fname);
         end
         cd(oldFolder)
-        cd('trainingdatavalues')
+        cd('value_color')
         % Write these fake data to a file
         save(fname,'Hx','th0','params')
         cd(oldFolder)
