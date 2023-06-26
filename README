@@ -24,3 +24,46 @@ rand 5 by 400:
     sigma: 1.8181e6
     nu: 1.5859
     rho: 3771
+
+    results are also good when categorized
+
+rand 10 by 200:
+    sigma: 3.2119e6
+    nu: 0.92067
+    rho: 7541
+
+    sigma: 1.1503e6
+    nu: 0.47416
+    rho: 37495
+
+    sigma: 2.7595e6
+    nu: 2.903
+    rho: 4224
+
+    sigma: 2.5776e6
+    nu: 2.3118
+    rho: 14321
+
+    sigma: 1.2835e6
+    nu: 1.0533
+    rho: 8779
+
+    sigma: 3.3465e6
+    nu: 2.5929
+    rho: 4980
+
+    sigma: 3.14e6
+    nu: 2.8828
+    rho: 9225
+
+    sigma: 3.9627e6
+    nu: 2.3391
+    rho: 25686
+
+    sigma: 3.7049e6
+    nu: 1.7893
+    rho: 4265
+
+    sigma: 3.8864e6
+    nu: 1.7795
+    rho: 10691
