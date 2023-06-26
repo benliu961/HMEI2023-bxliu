@@ -4,7 +4,7 @@ from PIL import Image
 import numpy as np
  
 
-directory = 'image_only_sigma'
+directory = 'image_5by400'
 
 def find_white_corners(im):
     data = np.asarray(im)
