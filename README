@@ -3,3 +3,24 @@
 
 2 by 200:
     similar results to the 5 by 400.
+
+rand 5 by 400:
+    sigma: 2.8643e6
+    nu: 0.1147
+    rho: 34977
+
+    sigma: 1.4739e6
+    nu: 0.37443
+    rho: 6688
+
+    sigma: 2.3407e6
+    nu: 2.9989
+    rho: 9053
+
+    sigma: 3.5659e6
+    nu: 1.012
+    rho: 41797
+
+    sigma: 1.8181e6
+    nu: 1.5859
+    rho: 3771
