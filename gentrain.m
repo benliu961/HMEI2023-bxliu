@@ -35,7 +35,7 @@ for index=indices
         [Hx,th0,params]=simulosl(th0,params);
         % Generic name
         fname=sprintf('gentrain_%.3i',index);
-        oldFolder = cd('image_5by400');
+        oldFolder = cd('image_10by200');
         if xver==1
             % Make a quick plot
 	  imagesc(v2s(Hx,params)); axis equal; colormap gray;
@@ -48,7 +48,7 @@ for index=indices
             print('-dpng', fname);
         end
         cd(oldFolder)
-        cd('value_5by400')
+        cd('value_10by200')
         % Write these fake data to a file
         save(fname,'Hx','th0','params')
         cd(oldFolder)
