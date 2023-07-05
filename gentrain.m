@@ -19,13 +19,13 @@ xver=1;
 % th0(2)=1.5;
 % th0(3)=30000;
 
-% th0(1)=2.5e6;
-% th0(2)=2.5;
-% th0(3)=25000
+th0(1)=2.5e6;
+th0(2)=2.5;
+th0(3)=25000
 
-th0(1)=rand()*3e6 + 1e6;
-th0(2)=rand()*3;
-th0(3)=round(exp(rand()*3+8));
+% th0(1)=rand()*3e6 + 1e6;
+% th0(2)=rand()*3;
+% th0(3)=round(exp(rand()*3+8));
 
 % dth=1e5;
 for index=indices
@@ -39,7 +39,7 @@ for index=indices
         [Hx,th0,params]=simulosl(th0,params);
         % Generic name
         fname=sprintf('gentrain_%.3i',index);
-        oldFolder = cd('image_rand_10by200');
+        oldFolder = cd('image_5by400');
         if xver==1
             % Make a quick plot
 	  imagesc(v2s(Hx,params)); axis equal; colormap gray;
@@ -52,7 +52,7 @@ for index=indices
             print('-dpng', fname);
         end
         cd(oldFolder)
-        cd('value_rand_10by200')
+        cd('value_5by400')
         % Write these fake data to a file
         save(fname,'Hx','th0','params')
         cd(oldFolder)
