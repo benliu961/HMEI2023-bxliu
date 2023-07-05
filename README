@@ -67,3 +67,9 @@ rand 10 by 200:
     sigma: 3.8864e6
     nu: 1.7795
     rho: 10691
+
+
+Observations from loss distributions:
+    Prediciting rho is consistent and good. All losses for rho are very close to a normal distribution of some kind.
+    sigma and nu aren't as good. Some of the losses for sigma and nu do not look normal.
+    When the images are categorized, all three perform well, including in the random category.
