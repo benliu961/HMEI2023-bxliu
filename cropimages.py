@@ -3,8 +3,8 @@ import os
 from PIL import Image
 import numpy as np
  
-
-directory = 'image_rand_10by200'
+os.chdir('../HMEI2023-bxliu-data/')
+directory = 'image_5by400'
 
 def find_white_corners(im):
     data = np.asarray(im)
