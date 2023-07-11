@@ -5,9 +5,9 @@ function gentrain(indices)
 %
 % indices    A running number
 %
-% Generate a training data set for...
+% Generate a training data set for the convolutional neural network to predict the three parameters
 %
-% Written by X on Y
+% Written by Benjamin Liu
 
 % Run something with all defaults
 
