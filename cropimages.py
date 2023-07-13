@@ -5,7 +5,7 @@ from PIL import Image
 import numpy as np
  
 os.chdir('../HMEI2023-bxliu-data/')
-directory = 'image_rain'
+directory = 'image_5by400'
 
 # Find the coordinates of the white borders if image im
 def find_white_corners(im):
