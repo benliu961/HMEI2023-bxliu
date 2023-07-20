@@ -28,7 +28,7 @@ xver=1;
 % th0(3)=round(exp(rand()*3+8));
 
 % dth=1e5;
-th0(1)=1.5e6;
+th0(1)=1;
 for n=1:5
     th0(2)=n*0.5;
     for m=1:5
