@@ -30,9 +30,9 @@ xver=1;
 % dth=1e5;
 th0(1)=1;
 for n=1:5
-    th0(2)=n*0.5;
+    th0(2)=n*0.5+0.25;
     for m=1:5
-        th0(3)=(0.5*m)*10000;
+        th0(3)=(0.5*m+0.25)*10000;
         for index=indices
             % th0(1)=rand()*3e6 + 1e6;
             % th0(2)=rand()*3;
@@ -40,7 +40,7 @@ for n=1:5
             % a = round(rand()*100+32);
             % b = round(rand()*100+32);
             % params.NyNx=[a b];
-            i = (n-1)*(2000) + (m-1)*400 + index;
+            i = (n-1)*(25) + (m-1)*5 + index + 125;
             try
                 [Hx,th0,params]=simulosl(th0,params);
                 % Generic name
